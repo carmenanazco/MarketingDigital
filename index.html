@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Demo - Coaching</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("PUBLIC_KEY_DE_EJEMPLO"); 
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="floating-social">
+    <a href="https://wa.me/1132803790" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.instagram.com/carmen_anazco" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/carmen-añazco" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+
+
+<button class="scroll-to-top" id="scrollToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Volver arriba">
+  <i class="bi bi-chevron-double-up"></i>
+</button>
+
+<header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav">
+                <div class="contenedorLogo">
+                    <a class="navbar-brand logo" href="#">
+                    <img src="./img/Logo.png" class="d-inline-block align-text-center logo">
+                        Marketing
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuCollapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre mi</a></li>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                                <ul class="dropdown-menu menu">
+                                    <li><a class="dropdown-item" href="#servicios">Asesoramiento</a></li>
+                                    <li><a class="dropdown-item" href="#servicios">Coaching</a></li>
+                                    <li><a class="dropdown-item" href="#servicios">Presencia Online</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>  
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+</header>
+
+<!-- Hero -->
+  <section class="bg-light text-center hero">
+    <div class="container ">
+      <h1 class="display-4 m-5 call-to-action">Impulsá tu Marca Personal</h1>
+      <p class="lead">Coaching + Marketing Digital para llevar tu negocio al siguiente nivel.</p>
+      <a href="#contacto" class="btn btn-main btn-lg mt-3">Reservá tu sesión gratis</a>
+      <!-- <img src="./img/hero2.png" alt="Ilustración Hero" class="svg-illustration"> -->
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="bg-white" id="sobreMi">
+    <div class="container sobreMi">
+      <div class="texto">
+        <h2>Sobre mí</h2>
+        <p>Soy especialista en marketing digital y coach profesional. <br>Durante los últimos años he ayudado a emprendedores y profesionales a potenciar <br>sus negocios y alcanzar sus objetivos a través de estrategias digitales efectivas <br>y un acompañamiento personalizado.</p>
+        <p>Mi pasión es combinar técnicas de marketing innovadoras con el desarrollo personal  <br>para que cada cliente no solo logre más ventas, <br>sino también crezca en confianza y liderazgo. <br>Creo firmemente que el éxito verdadero viene de alinear tus metas profesionales <br>con tu bienestar y propósito.</p>
+        <p>Si buscas transformar tu presencia online y crecer de manera sostenible, <br>estás en el lugar indicado. <br>Estoy aquí para guiarte paso a paso en este camino <br>hacia tu mejor versión y un negocio exitoso.</p>
+      </div>
+      <img src="./img/sobreMi.png" alt="Sobre mí Ilustración" class="img-sobreMi">
+    </div>
+      
+  </section>
+
+  <!-- Servicios -->
+  <section class="bg-light" id="servicios">
+    <div class="container">
+      <h2 class="text-center mb-4">Servicios</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="./img/asesoramiento.png" alt="Asesoramiento" class="svg-illustration">
+          <h5>Asesoramiento estratégico</h5>
+          <p>Diseñamos tu camino digital paso a paso.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./img/coaching.png" alt="Coaching" class="svg-illustration">
+          <h5>Coaching 1:1</h5>
+          <p>Sesiones personalizadas para definir objetivos y avanzar con claridad.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./img/presencia.png" alt="Presencia Online" class="svg-illustration">
+          <h5>Presencia online</h5>
+          <p>Creación de contenido, redes, embudos y más.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="testimonios">
+  <h2>Lo que dicen mis clientes</h2>
+  <div class="testimonios-container">
+    
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Laura Gómez" class="testimonial-img">
+      <p class="testimonial-text">"Llegué buscando mejorar mi presencia online y terminé transformando mi forma de trabajar. Sus estrategias son claras, efectivas y fáciles de implementar, y el coaching me ayudó a mantenerme motivado y enfocado."</p>
+      <h4 class="testimonial-name">Laura Gómez</h4>
+      <span class="testimonial-location">Buenos Aires, Argentina</span>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Martín Rodríguez" class="testimonial-img">
+      <p class="testimonial-text">"Gracias a su plan de marketing, mis redes sociales no solo aumentaron en seguidores, sino que ahora generan clientes reales. La combinación de estrategia y apoyo personal marca una gran diferencia."</p>
+      <h4 class="testimonial-name">Martín Rodríguez</h4>
+      <span class="testimonial-location">Córdoba, Argentina</span>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Sofía López" class="testimonial-img">
+      <p class="testimonial-text">"No solo aprendí a vender más, sino también a organizarme y confiar en mi proyecto. El enfoque integral que combina marketing y coaching es realmente transformador."</p>
+      <h4 class="testimonial-name">Sofía López</h4>
+      <span class="testimonial-location">Montevideo, Uruguay</span>
+    </div>
+  </div>
+</section>
+
+
+  
+
+
+  <!-- Contacto -->
+  <section class="bg-light" id="contacto">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <div class="d-grid gap-2 col-3 mx-auto m-4">
+          <button type="submit" class="btn btn-main">Enviar mensaje</button>
+        </div>
+      </form>      
+    </div>
+  </section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>© 2025 Todos los derechos reservados.</p>
+    <div class="social-buttons">
+      <a href="https://wa.me/1132803790" target="_blank" title="WhatsApp" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com/carmen_anazco" target="_blank" title="Instagram" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/carmen-añazco" target="_blank" title="LinkedIn" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <small class="d-block mt-2">Coaching y Marketing Digital para emprendedores.</small>
+  </div>
+</footer>
+
+  <script src="./js/app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
